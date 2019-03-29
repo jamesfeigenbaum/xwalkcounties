@@ -1,0 +1,20 @@
+Package: xwalkcounties
+Type: Package
+Title: Standardize County Boundaries and Borders Across Censuses
+Version: 0.1.0
+Author: James Feigenbaum
+Maintainer: James Feigenbaum <jamesf@bu.edu>
+Description: Simple package to standardize historical county borders.
+    Mostly works for taking ICPSR 2896 data (thanks Mike Haines!) and using spatial interpolation
+    to build consistent county objects over censuses.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports:
+  dplyr,
+  magrittr,
+  readr,
+  tidyselect
+Suggests: knitr, rmarkdown
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
