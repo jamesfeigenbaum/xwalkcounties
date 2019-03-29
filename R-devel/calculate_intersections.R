@@ -37,7 +37,7 @@ load_nhgis_shp <- function(year) {
 
 intersect_shps <- function(y1, y2, small_intersection = 1000) {
 
-  out_path <- sprintf("R-devel/intersections/county_%d_%d.csv", y1, y2)
+  out_path <- sprintf("data-raw/county_%d_%d.csv", y1, y2)
 
   # check if already intersected
   if (out_path %>% file.exists()) {

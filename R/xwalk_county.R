@@ -25,7 +25,7 @@ xwalk_county <- function(data, y0, yb, merge_key = c("state", "county"), var_val
   # turning data from y0 into yb (y_baseline)
 
   # TODO store data properly...
-  dt_map <- "R-devel/intersections/county_%d_%d.csv" %>%
+  dt_map <- "data-raw/county_%d_%d.csv" %>%
     sprintf(yb, y0) %>%
     read_csv(col_names = TRUE, col_types = cols())
 
